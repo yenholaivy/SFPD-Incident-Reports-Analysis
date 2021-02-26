@@ -49,7 +49,7 @@ The number one subcategory - Larceny From Vehicle - is not a big surprise to me.
 
 
 #### Incident Neighborhood
-Moving to the incident neighborhoods, there are 41 neighborhoods in San Francisco. In the graph below, we can see that there are a lot of dots (i.e. incidents) on the top right corner, which is the downtown, business center and the touristy areas. In other words, there are a lot more people coming in and out, which could explain why the rate of crime is much higher. On the next graph, we can see similar patterns on the top 4 larceny theft subcategories.
+Moving to the incident neighborhoods, there are 41 neighborhoods in San Francisco. In the graph below, we can see that there are a lot of dots (i.e. incidents) on the top right corner, which is the downtown, the business center and the touristy areas. In other words, there are a lot more people coming in and out, which could explain why the rate of larceny theft is much higher. On the next graph, we can see similar patterns on the top 4 larceny theft subcategories.
 
 
 ![alt text](https://github.com/yenholaivy/SFPD-Incident-Reports-Analysis/blob/main/img/neighborhood.png)
@@ -59,7 +59,13 @@ Moving to the incident neighborhoods, there are 41 neighborhoods in San Francisc
 
 
 #### Incident Trend Over Time
+The last attribute I want to explore is time. Based on the graph below, 2018 and 2019 had almost same number of larceny incidents, where there is a big drop in 2020. According to the dataset, there are no changes in the number of police stations. And there were no new laws on larceny that got passed last year, either. So, the most possible reason for the drop might be Covid-19.
 
+![alt text](https://github.com/yenholaivy/SFPD-Incident-Reports-Analysis/blob/main/img/larceny-year-bar.png)
+
+In this next graph, we can see a big drop in 2020 March, which is when we started sheltering at home, and people started moving out of the city. The pandemic and the changes in people's living habits could all contribute to the drop in the number of incidents.
+
+![alt text](https://github.com/yenholaivy/SFPD-Incident-Reports-Analysis/blob/main/img/larceny-month-bar.png)
 
 ## Hypothesis Testing
 #### Rate of Larceny Theft Between 2018 vs 2019
@@ -69,16 +75,24 @@ Moving to the incident neighborhoods, there are 41 neighborhoods in San Francisc
 <b> Alternative Hypothesis</b>: The rate of larceny theft in 2018 is different from the rate of larceny theft in 2019.
 
 #### Assumptions:
-1. Each larceny incident is an independent event. One larceny incident doesn't lead to another, or prevent another to happen.
+1. Each larceny incident is an independent event. One incident doesn't lead to another or prevent another to happen.
 2. Each larceny incident is committed by a different resident in SF.
 
 #### Two Samples:
-2018 Incident Reports: 
+2018 Sample: 
 - SF Population in 2018 is 870,044.
 - The number of larceny incident reports is 48,841.
 
-2019 Incident Reports: 
+2019 Sample: 
 - SF Population in 2019 is 874,961.
 - The number of larceny incident reports is 48,898.
 
 #### Perform both Two Sample T-Test and Mann-Whitney U-Test.
+
+#### Result
+
+## Next Steps
+There are so much more we can do on the subject of SF incident reports. Some topics that I am interested in taking on next are:
+1. Look into how Covid affects the incident reports?
+2. Look into other incident categories.
+3. Compare SF incident reports to other big cities such as Chicago, New York.
