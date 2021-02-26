@@ -20,7 +20,7 @@ Based on the data, there are 51 incident categories, and the top 5 are:
 
 ![alt text](https://github.com/yenholaivy/SFPD-Incident-Reports-Analysis/blob/main/img/incident-category-pie.png)
  
-Based on the pie chart and data above, larceny theft category made up 30% of the incident reports. I found this number quite large, and decided to focus on the this category to find out more information about larceny theft in San Francisco.
+Based on the pie chart and data above, larceny theft category made up 30% of the incident reports. I found this number quite large, and I decided to focus on the this category to find out more information about larceny theft in San Francisco.
 
 
 #### Larceny Theft
@@ -45,30 +45,32 @@ Digging into the larceny category, there are total 8 subcategories, and the top 
 
 ![alt text](https://github.com/yenholaivy/SFPD-Incident-Reports-Analysis/blob/main/img/larceny-subcat-pie.png)
 
-The number one subcategory - Larceny From Vehicle - is not a big surprise to me. I always hear about how you should never leave anything in the car in San Francisco, not even a jacket. And the data here is really supporting that statement. 
+The number one subcategory - Larceny From Vehicle - is not a big surprise to me. I always hear about how you should never leave anything in the car in San Francisco, not even a jacket, and the data supports that. 
 
 
 #### Incident Neighborhood
-Moving to the incident neighborhoods, there are 41 neighborhoods in San Francisco. In the graph below, we can see that there are a lot of dots (i.e. incidents) on the top right corner, which is the downtown, the business center and the touristy areas. In other words, there are a lot more people coming in and out, which could explain why the rate of larceny theft is much higher. On the next graph, we can see similar patterns on the top 4 larceny theft subcategories.
+Moving to the incident neighborhoods, there are 41 neighborhoods in San Francisco. In the graph below, we can see that there are a lot of dots (i.e. incidents) on the top right corner, which is Downtown, the business center and the touristy areas. In other words, there is a lot more inflow and outflow, which could explain why the rate of larceny theft is much higher. 
 
 
 ![alt text](https://github.com/yenholaivy/SFPD-Incident-Reports-Analysis/blob/main/img/neighborhood.png)
+
+On the next graph, we can see similar patterns for the top 4 larceny theft subcategories.
 
 ![alt text](https://github.com/yenholaivy/SFPD-Incident-Reports-Analysis/blob/main/img/nbhood-subcat.png)
 
 
 
 #### Incident Trend Over Time
-The last attribute I want to explore is time. Based on the graph below, 2018 and 2019 had almost same number of larceny incidents, where there is a big drop in 2020. According to the dataset, there are no changes in the number of police stations. And there were no new laws on larceny that got passed last year, either. So, the most possible reason for the drop might be Covid-19.
+The last attribute I want to explore is time. Based on the graph below, 2018 and 2019 had almost the same number of larceny incidents, with a big drop in 2020. According to the dataset, there were no changes in the number of police stations, and there were no new laws on larceny that got passed last year. So, the most probable reason for the drop might be COVID-19.
 
 ![alt text](https://github.com/yenholaivy/SFPD-Incident-Reports-Analysis/blob/main/img/larceny-year-bar.png)
 
-In this next graph, we can see a big drop in 2020 March, which is when we started sheltering at home, and people started moving out of the city. The pandemic and the changes in people's living habits could all contribute to the drop in the number of incidents.
+In this next graph, we can see a big drop in 2020 March, which is when shelter-in-place orders were issued, and people began moving out of the city. The pandemic and the changes in people's living habits could've contributed to the drop in the number of incidents.
 
 ![alt text](https://github.com/yenholaivy/SFPD-Incident-Reports-Analysis/blob/main/img/larceny-month-bar.png)
 
 ## Hypothesis Testing
-For my hypothesis testing, I want to know, prior to the Covid influence, if there is a significant difference in the rate of larceny between 2018 and 19. 
+For my hypothesis testing, I want to know, prior to the influence COVID has had, if there was a significant difference in the rate of larceny theft between 2018 and 2019. 
 
 <b> Null Hypothesis</b>: The rate of larceny theft in 2018 is equal to the rate of larceny theft in 2019. </br>
 <b> Alternative Hypothesis</b>: The rate of larceny theft in 2018 is different from the rate of larceny theft in 2019. </br>
@@ -78,7 +80,6 @@ For my hypothesis testing, I want to know, prior to the Covid influence, if ther
 To perform the testing, I have 2 assumptions: 
 1. Each incident is an independent event (i.e. one incident doesn't lead to another or prevent another to happen).
 2. Each incident is committed by a different person in SF.
-
 
 #### Two Samples:
 2018 Sample: 
@@ -90,13 +91,13 @@ To perform the testing, I have 2 assumptions:
 - The number of larceny incident reports is 48,898.
 
 #### Result
-I performed the test with both two sample t-test and Mann-Whitney u-test, and got the same p-value 0.47. As the p-value is much higher than alpha, I failed to reject the null hypothesis. I am not able to conclude that the rate of larceny theft is different between 2018 and 2019.
+I performed the test with both two sample *t*-test and Mann-Whitney *u*-test, and got the same *p*-value 0.47. As the *p*-value is much higher than alpha, I failed to reject the null hypothesis. The results of the testing don't support the conclusion that the rate of larceny theft is different between 2018 and 2019.
 
 ![Screen Shot 2021-02-26 at 10 51 13 AM](https://user-images.githubusercontent.com/77142026/109352283-68ae9500-782f-11eb-9cbd-de633fcb8bbb.png)
 
 
 ## Next Steps
-There are so much more we can do on the subject of SF incident reports. Some topics that I am interested in taking on next are:
-1. Look into how Covid affects the incident reports?
-2. Look into other incident categories.
-3. Compare SF incident reports to other big cities such as Chicago, New York.
+There is more we can do on the subject of SF incident reports. Some topics of interest include:
+1. The effect of the COVID-19 pandemic on the rate of incident reports
+2. Analysis on other incident categories
+3. A comparative analysis on incident reports across other major American cities (e.g. LA, New York, Chicago)
