@@ -17,10 +17,23 @@ Based on the data, there are 51 incident categories, and the top 5 are:
 4. Non-Criminal - 26480 (6%)
 5. Assault - 25794 (6%)
 
+
 ![alt text](https://github.com/yenholaivy/SFPD-Incident-Reports-Analysis/blob/main/img/incident-category-pie.png)
  
+Based on the pie chart and data above, larceny theft category made up 30% of the incident reports. I found this number quite large, and decided to focus on the this category to find out more information about larceny theft in San Francisco.
 
 #### Larceny Theft
+Different from robbery or burglary, larceny theft involves unlawfully taking property without force and breaking into a structure. There is a local threshold that determine if an incident is grand larceny, which can be charged as a felony, or petty larceny. For California, that threshold is $950.
+
+Looking at the data, the number of grand larceny incidents is much larger than the number of petty larceny incidents.
+Grand larceny - 81240 (62%)
+Petty larceny - 40483 (31%)
+Unknown - 9593 (7%)
+
+![alt text](https://github.com/yenholaivy/SFPD-Incident-Reports-Analysis/blob/main/img/larceny-amount-bar.png)
+
+This is a worrisome observation because grand larceny is much more serious. But at the same time, if someone has to commit larceny with the risk of getting arrested, perhaps it makes more sense to target the more valuable properties. 
+
 
 #### Incident Subcategory
 
