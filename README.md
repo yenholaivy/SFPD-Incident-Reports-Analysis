@@ -8,7 +8,8 @@ For the SF residents and the people that frequent SF, I would like to find our t
 2. Where do the incidents more likely to occur?
 3. How do the incidents trend over time?
 
-## EDA
+
+## Exploratory Data Analysis
 #### Incident Category
 Based on the data, there are 51 incident categories, and the top 5 are:
 1. Larceny Theft - 131316 (30%)
@@ -17,18 +18,18 @@ Based on the data, there are 51 incident categories, and the top 5 are:
 4. Non-Criminal - 26480 (6%)
 5. Assault - 25794 (6%)
 
-
 ![alt text](https://github.com/yenholaivy/SFPD-Incident-Reports-Analysis/blob/main/img/incident-category-pie.png)
  
 Based on the pie chart and data above, larceny theft category made up 30% of the incident reports. I found this number quite large, and decided to focus on the this category to find out more information about larceny theft in San Francisco.
+
 
 #### Larceny Theft
 Different from robbery or burglary, larceny theft involves unlawfully taking property without force and breaking into a structure. There is a local threshold that determine if an incident is grand larceny, which can be charged as a felony, or petty larceny. For California, that threshold is $950.
 
 Looking at the data, the number of grand larceny incidents is much larger than the number of petty larceny incidents.
-Grand larceny - 81240 (62%)
-Petty larceny - 40483 (31%)
-Unknown - 9593 (7%)
+- Grand larceny - 81240 (62%)
+- Petty larceny - 40483 (31%)
+- Unknown - 9593 (7%)
 
 ![alt text](https://github.com/yenholaivy/SFPD-Incident-Reports-Analysis/blob/main/img/larceny-amount-bar.png)
 
@@ -36,8 +37,26 @@ This is a worrisome observation because grand larceny is much more serious. But 
 
 
 #### Incident Subcategory
+Digging into the larceny category, there are total 8 subcategories, and the top 4 are:
+1. Larceny - From Vehicle - 73844 (56%)
+2. Larceny Theft - Other - 32443 (24%)
+3. Larceny Theft - From Building - 7999 (6%)
+4. Larceny Theft - Shoplifting - 7313 (5%)
+
+![alt text](https://github.com/yenholaivy/SFPD-Incident-Reports-Analysis/blob/main/img/larceny-subcat-pie.png)
+
+The number one subcategory - Larceny From Vehicle - is not a big surprise to me. I always hear about how you should never leave anything in the car in San Francisco, not even a jacket. And the data here is really supporting that statement. 
+
 
 #### Incident Neighborhood
+Moving to the incident neighborhoods, there are 41 neighborhoods in San Francisco. In the graph below, we can see that there are a lot of dots (i.e. incidents) on the top right corner, which is the downtown, business center and the touristy areas. In other words, there are a lot more people coming in and out, which could explain why the rate of crime is much higher. On the next graph, we can see similar patterns on the top 4 larceny theft subcategories.
+
+
+![alt text](https://github.com/yenholaivy/SFPD-Incident-Reports-Analysis/blob/main/img/neighborhood.png)
+
+![alt text](https://github.com/yenholaivy/SFPD-Incident-Reports-Analysis/blob/main/img/nbhood-subcat.png)
+
+
 
 #### Incident Trend Over Time
 
