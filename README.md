@@ -12,11 +12,11 @@ For the SF residents and the people that frequent SF, I would like to find out t
 ## Exploratory Data Analysis
 #### Incident Category
 Based on the data, there are 51 incident categories, and the top 5 are:
-1. Larceny Theft - 131316 (30%)
-2. Other Miscellaneous - 32171 (7%)
-3. Malicious Mischief - 27830 (6%)
-4. Non-Criminal - 26480 (6%)
-5. Assault - 25794 (6%)
+1. Larceny Theft - 131,316 (30%)
+2. Other Miscellaneous - 32,171 (7%)
+3. Malicious Mischief - 27,830 (6%)
+4. Non-Criminal - 26,480 (6%)
+5. Assault - 25,794 (6%)
 
 ![alt text](https://github.com/yenholaivy/SFPD-Incident-Reports-Analysis/blob/main/img/incident-category-pie.png)
  
@@ -27,9 +27,9 @@ Based on the pie chart and data above, larceny theft category made up 30% of the
 Different from robbery or burglary, larceny theft involves unlawfully taking property without force and breaking into a structure. There is a local threshold that determine if an incident is grand larceny, which can be charged as a felony, or petty larceny. For California, that threshold is $950.
 
 Looking at the data, the number of grand larceny incidents is much larger than the number of petty larceny incidents.
-- Grand larceny - 81240 (62%)
-- Petty larceny - 40483 (31%)
-- Unknown - 9593 (7%)
+- Grand larceny - 81,240 (62%)
+- Petty larceny - 40,483 (31%)
+- Unknown - 9,593 (7%)
 
 ![alt text](https://github.com/yenholaivy/SFPD-Incident-Reports-Analysis/blob/main/img/larceny-amount-bar.png)
 
@@ -38,10 +38,10 @@ This is a worrisome observation because grand larceny is much more serious. But 
 
 #### Incident Subcategory
 Digging into the larceny category, there are total 8 subcategories, and the top 4 are:
-1. Larceny - From Vehicle - 73844 (56%)
-2. Larceny Theft - Other - 32443 (24%)
-3. Larceny Theft - From Building - 7999 (6%)
-4. Larceny Theft - Shoplifting - 7313 (5%)
+1. Larceny - From Vehicle - 73,844 (56%)
+2. Larceny Theft - Other - 32,443 (24%)
+3. Larceny Theft - From Building - 7,999 (6%)
+4. Larceny Theft - Shoplifting - 7,313 (5%)
 
 ![alt text](https://github.com/yenholaivy/SFPD-Incident-Reports-Analysis/blob/main/img/larceny-subcat-pie.png)
 
@@ -68,15 +68,17 @@ In this next graph, we can see a big drop in 2020 March, which is when we starte
 ![alt text](https://github.com/yenholaivy/SFPD-Incident-Reports-Analysis/blob/main/img/larceny-month-bar.png)
 
 ## Hypothesis Testing
-#### Rate of Larceny Theft Between 2018 vs 2019
+For my hypothesis testing, I want to know, prior to the Covid influence, if there is a significant difference in the rate of larceny between 2018 and 19. 
 
-<b> Null Hypothesis</b>: The rate of larceny theft in 2018 is equal to the rate of larceny theft in 2019. 
-
-<b> Alternative Hypothesis</b>: The rate of larceny theft in 2018 is different from the rate of larceny theft in 2019.
+<b> Null Hypothesis</b>: The rate of larceny theft in 2018 is equal to the rate of larceny theft in 2019. </br>
+<b> Alternative Hypothesis</b>: The rate of larceny theft in 2018 is different from the rate of larceny theft in 2019. </br>
+<b> Alpha</b>: 0.05
 
 #### Assumptions:
-1. Each larceny incident is an independent event. One incident doesn't lead to another or prevent another to happen.
-2. Each larceny incident is committed by a different resident in SF.
+To perform the testing, I have 2 assumptions: 
+1. Each incident is an independent event (i.e. one incident doesn't lead to another or prevent another to happen).
+2. Each incident is committed by a different person in SF.
+
 
 #### Two Samples:
 2018 Sample: 
@@ -87,9 +89,11 @@ In this next graph, we can see a big drop in 2020 March, which is when we starte
 - SF Population in 2019 is 874,961.
 - The number of larceny incident reports is 48,898.
 
-#### Perform both Two Sample T-Test and Mann-Whitney U-Test.
-
 #### Result
+I performed the test with both two sample t-test and Mann-Whitney u-test, and got the same p-value 0.47. As the p-value is much higher than alpha, I failed to reject the null hypothesis. I am not able to conclude that the rate of larceny theft is different between 2018 and 2019.
+
+![Screen Shot 2021-02-26 at 10 51 13 AM](https://user-images.githubusercontent.com/77142026/109352283-68ae9500-782f-11eb-9cbd-de633fcb8bbb.png)
+
 
 ## Next Steps
 There are so much more we can do on the subject of SF incident reports. Some topics that I am interested in taking on next are:
