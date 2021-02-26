@@ -1,7 +1,7 @@
 # SFPD Incident Reports Analysis
 
 ## Overview
-From 2018/01/01 to 2021/02/20, San Francisco Police Department (SFPD) tracked over 436K incident reports. The data is publicly available on [DataSF] (https://data.sfgov.org/Public-Safety/Police-Department-Incident-Reports-2018-to-Present/wg3w-h783) and is updated daily.
+From 2018/01/01 to 2021/02/20, San Francisco Police Department (SFPD) tracked over 436K incident reports. The data is publicly available on [DataSF](https://data.sfgov.org/Public-Safety/Police-Department-Incident-Reports-2018-to-Present/wg3w-h783) and is updated daily.
 
 For the SF residents and the people that frequent SF, I would like to find our the following questions for you:
 1. What are the top incident categories in SF?
