@@ -1,14 +1,43 @@
-# SFPD-Incident-Reports-Analysis
+# SFPD Incident Reports Analysis
 
-## Background
-In this study, I will be looking into the SF Police Department Incident Reports from 2018/01/01 to 2021/02/20.
+## Overview
+From 2018/01/01 to 2021/02/20, San Francisco Police Department (SFPD) tracked over 436K incident reports. The data is publicly available on [DataSF] (https://data.sfgov.org/Public-Safety/Police-Department-Incident-Reports-2018-to-Present/wg3w-h783) and is updated daily.
 
-## Data Preparation
-The data can be access through <site>. It is updated daily.
-
-By the time of the data extraction, there are X rows (i.e. X incident reports).
+For the SF residents and the people that frequent SF, I would like to find our the following questions for you:
+1. What are the top incident categories in SF?
+2. Where do the incidents more likely to occur?
+3. How do the incidents trend over time?
 
 ## EDA
-1. Look into the 'Incident Category' > Not a lot of 
+#### Incident Category
 
-## Results
+#### Larceny Theft
+
+#### Incident Subcategory
+
+#### Incident Neighborhood
+
+#### Incident Trend Over Time
+
+
+## Hypothesis Testing
+#### Rate of Larceny Theft Between 2018 vs 2019
+
+<b> Null Hypothesis</b>: The rate of larceny theft in 2018 is equal to the rate of larceny theft in 2019. 
+
+<b> Alternative Hypothesis</b>: The rate of larceny theft in 2018 is different from the rate of larceny theft in 2019.
+
+#### Assumptions:
+1. Each larceny incident is an independent event. One larceny incident doesn't lead to another, or prevent another to happen.
+2. Each larceny incident is committed by a different resident in SF.
+
+#### Two Samples:
+2018 Incident Reports: 
+- SF Population in 2018 is 870,044.
+- The number of larceny incident reports is 48,841.
+
+2019 Incident Reports: 
+- SF Population in 2019 is 874,961.
+- The number of larceny incident reports is 48,898.
+
+#### Perform both Two Sample T-Test and Mann-Whitney U-Test.
