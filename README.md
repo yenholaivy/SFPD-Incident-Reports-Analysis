@@ -18,7 +18,7 @@ Based on the data, there are 51 incident categories, and the top 5 are:
 5. Assault - 25794 (6%)
 
 ![alt text](imgs/incident-category-pie.png)
-
+ 
 
 #### Larceny Theft
 
