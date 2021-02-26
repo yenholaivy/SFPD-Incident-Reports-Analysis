@@ -4,9 +4,9 @@
 From 2018/01/01 to 2021/02/20, San Francisco Police Department (SFPD) tracked over 436K incident reports with over 30 attributes. The data is publicly available on [DataSF](https://data.sfgov.org/Public-Safety/Police-Department-Incident-Reports-2018-to-Present/wg3w-h783) and is automatically updated daily.
 
 For the SF residents and the people that frequent SF, I would like to find out the following questions for you:
-1. What are the top incident categories in SF?(#incident-category)
-2. Where do the incidents more likely to occur?(#incident-neighborhood)
-3. How do the incidents trend over time?(#incident-trend-over-time)
+1. [What are the top incident categories in SF?](#incident-category)
+2. [Where do the incidents more likely to occur?](#incident-neighborhood)
+3. [How do the incidents trend over time?](#incident-trend-over-time)
 
 
 ## Exploratory Data Analysis
