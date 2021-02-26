@@ -17,7 +17,7 @@ Based on the data, there are 51 incident categories, and the top 5 are:
 4. Non-Criminal - 26480 (6%)
 5. Assault - 25794 (6%)
 
-![alt text](imgs/incident-category-pie.png)
+![alt text](https://github.com/yenholaivy/SFPD-Incident-Reports-Analysis/blob/main/img/incident-category-pie.png)
  
 
 #### Larceny Theft
